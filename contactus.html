@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/effect.css" rel="stylesheet" type="text/css">
+<script>
+function toggleIcon(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find(".more-less")
+            .toggleClass('glyphicon-plus glyphicon-minus');
+    }
+    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+    $('.panel-group').on('shown.bs.collapse', toggleIcon);
+	
+	
+</script>
+</head>
+
+<body>
+<!-- header -->
+<nav class="navbar navbar-inverse top-nav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand logo" href="#"><img src="images/logo.png"></a> </div>
+    <div class="navbar-collapse collapse pull-right" aria-expanded="false" style="height: 1px;">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="counsel.html">Counsel</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="aboutsus.html">About Us</a></li>
+        <li><a href="#contact">Blogs</a></li>
+        <li class="active"><a href="contactus.html">Contact us</a></li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+    
+  </div>
+</nav>
+<!-- header --> 
+<!-- banner -->
+<div class="jumbotron service-banner-bg">
+  <div class="container">
+    <h2 class="text-white text-center">Contact Us <small class="text-white row">Legeal, Accounting &amp; Compliance Advice from Qualified Professionals</small></h2>
+    <p><a class="btn btn-primary btn-orange btn-lg" href="#" role="button">Ask a free question</a></p>
+  </div>
+</div>
+<!-- banner -->
+
+<section class="contactus-pannel">
+  <div class="container">
+    <div class="col-lg-8 contactus-form">
+      <div class="h1 text-org nomargin-top">Need our service?</div>
+      <form role="form">
+        <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <input type="text" class="form-control" id="name" placeholder="Name">
+        </div>
+        <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <input type="text" class="form-control" id="email" placeholder="Email">
+        </div>
+         <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <input type="text" class="form-control" id="phn" placeholder="Phone">
+        </div>
+         <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+         <select class="form-control">
+                <option>Services Type</option
+                ><option>Business Formation</option>
+                <option>Tax & Other Registrations</option>
+                <option>Accounting & Tax</option>
+                <option>Contracts &amp; Legal Documents</option>
+                <option>Legeal Work</option>
+              </select>
+        </div>
+         <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+         <textarea name="" rows="3" class="form-control textarea-no-resize"></textarea>
+        </div>
+       
+        
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <button type="submit" class="btn btn-default btn-blue">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-4">
+      <div class="browse-question grey-bg">
+        <div class="h1 text-org">Contact Details</div>
+        <div class="col-lg-12 col-md-12 col-sm-12 pull-left contact-address">
+        <div class="h3 text-org">Office Address</div>
+          <address>
+          302, Ammashree Chambers, ST Bed, 4th Block, Koramangala, Bangalore 560034
+          </address>
+        </div>
+        
+        
+        <div class="col-lg-12 col-md-12 col-sm-12 pull-left contact-email">
+        <div class="h3 text-org">Email</div>
+          <div class="col-lg-12 col-md-12 col-sm-12 pull-left"><a href="#" class="text-blue">enquire@wazzeer.com</a></div>
+		 <div class="col-lg-12 col-md-12 col-sm-12 pull-left"> <a href="#" class="text-blue">partners@wazzeer.com</a></div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="col-lg-3 col-md-4 col-sm-3  col-xs-12">
+      <div class="footer-logo"><img src="images/logo.png"></div>
+      <div class="row">
+        <ul class="social-network">
+          <li><a href="#" title="Facebook"><i class="icon icon-facebook"></i></a></li>
+          <li><a href="#" title="Twitter"><i class="icon icon-twitter"></i></a></li>
+          <li><a href="#" title="Google Plus"><i class="icon icon-google-plus"></i></a></li>
+          <li><a href="#" title="Linkedin"><i class="icon icon-linkedin"></i></a></li>
+          <li><a href="#" title="You Tube"><i class="icon icon-mail"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-5 col-md-5  col-sm-5  col-xs-12 footer-navigation">
+      <h4 class="text-white">Main Navigation</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="counsel.html">Counsel</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Partners</a></li>
+        <li><a href="aboutsus.html">About Us</a></li>
+        <li><a href="#contact">Blogs</a></li>
+        <li class="active"><a href="contactus.html">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-md-3 col-sm-4  col-xs-12 question-section text-left">
+      <h4 class="text-white">QUESTIONS?</h4>
+      <p>Call us: <a href="#">(000) 000-0000</a></p>
+      <p>Email: <a href="mailto:info@wazzeer.com">info@wazzeer.com</a></p>
+    </div>
+  </div>
+  <div class="copyright text-center">Copyright © 2015 Wazzeer.com</div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

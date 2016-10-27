@@ -1,0 +1,473 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<!--<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/form.css" rel="stylesheet" type="text/css">
+<link href="css/select2.css" type="text/css" rel="stylesheet" />
+
+<script>
+function toggleIcon(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find(".more-less")
+            .toggleClass('glyphicon-plus glyphicon-minus');
+    }
+    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+    $('.panel-group').on('shown.bs.collapse', toggleIcon);
+	
+	
+	$('.btn-toggle').click(function() {
+    $(this).find('.btn').toggleClass('active');  
+    
+    if ($(this).find('.btn-primary').size()>0) {
+    	$(this).find('.btn').toggleClass('btn-primary');
+    }
+    if ($(this).find('.btn-danger').size()>0) {
+    	$(this).find('.btn').toggleClass('btn-danger');
+    }
+    if ($(this).find('.btn-success').size()>0) {
+    	$(this).find('.btn').toggleClass('btn-success');
+    }
+    if ($(this).find('.btn-info').size()>0) {
+    	$(this).find('.btn').toggleClass('btn-info');
+    }
+    
+    $(this).find('.btn').toggleClass('btn-default');
+       
+});
+
+$('form').submit(function(){
+	alert($(this["options"]).val());
+    return false;
+});
+	
+	
+</script>
+
+
+</head>
+
+<body>
+<!-- header -->
+<nav class="navbar navbar-inverse top-nav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand logo" href="#"><img src="images/logo.png"></a> </div>
+    <div class="pull-right"> <a href="login.html" class="button-login pull-right">Login / Registraion</a></div>
+    <div class="navbar-collapse collapse pull-right" aria-expanded="false" style="height: 1px;">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="counsel.html">Counsel</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="aboutsus.html">About Us</a></li>
+        <li><a href="#contact">Blogs</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+    
+  </div>
+</nav>
+<!-- header -->
+
+<section class="service-service-pannel">
+  <div class="container">
+    <div class="services-question">
+      <div class="main-heading text-center text-org">Default Fields</div>
+      <div class="question-section">
+        <form class="form-horizontal bordered-row">
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Input</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Disabled input</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="" disabled="disabled" placeholder="Disabled input ...">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Select</label>
+            <div class="col-sm-6">
+              <select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Select disabled</label>
+            <div class="col-sm-6">
+              <select class="form-control" disabled="disabled">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Custom select</label>
+            <div class="col-sm-6">
+              <select name="" class="form-control custom-select">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Custom select disabled</label>
+            <div class="col-sm-6">
+              <select name="" disabled="disabled" class="form-control custom-select">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Chosen select</label>
+            <div class="col-sm-6">
+              <select name="" class="form-control chosen-select">
+                <optgroup label="Option group 1">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                </optgroup>
+                <optgroup label="Option group 2">
+                <option>Option 5</option>
+                <option>Option 6</option>
+                <option>Option 7</option>
+                <option>Option 8</option>
+                </optgroup>
+                <optgroup label="Option group 3">
+                <option>Option 9</option>
+                <option>Option 10</option>
+                <option>Option 11</option>
+                <option>Option 12</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Chosen select disabled</label>
+            <div class="col-sm-6">
+              <select name="" disabled="disabled" data-placeholder="Disabled basic select input" class="form-control chosen-select">
+                <optgroup label="Option group 1">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                </optgroup>
+                <optgroup label="Option group 2">
+                <option>Option 5</option>
+                <option>Option 6</option>
+                <option>Option 7</option>
+                <option>Option 8</option>
+                </optgroup>
+                <optgroup label="Option group 3">
+                <option>Option 9</option>
+                <option>Option 10</option>
+                <option>Option 11</option>
+                <option>Option 12</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Multiselect</label>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-md-12">
+                  <input id="tags" class="form-control" type="text" value="awesome,nice" />
+                </div>
+       
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Checkbox</label>
+            <div class="col-sm-6">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Checkbox 1</label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Checkbox 2</label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Checkbox 3</label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" disabled="disabled" value="">
+                  Disabled checkbox</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Inline checkbox</label>
+            <div class="col-sm-6">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="" value="option1">
+                Checkbox 1</label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="" value="option2">
+                Checkbox 2</label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="" value="option3">
+                Checkbox 3</label>
+              <label class="checkbox-inline">
+                <input type="checkbox" disabled="disabled" id="" value="option4">
+                Disabled checkbox</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Radio</label>
+            <div class="col-sm-6">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="example-radio1" value="">
+                  Radio 1</label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="example-radio1" value="">
+                  Radio 2</label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="example-radio1" value="">
+                  Radio 3</label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="example-radio1" disabled="disabled" value="">
+                  Disabled radio</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Inline radio</label>
+            <div class="col-sm-6">
+              <label class="radio-inline">
+                <input type="radio" id="" name="example-radio1" value="option1">
+                Radio 1</label>
+              <label class="radio-inline">
+                <input type="radio" id="" name="example-radio1" value="option2">
+                Radio 2</label>
+              <label class="radio-inline">
+                <input type="radio" id="" name="example-radio1" value="option3">
+                Radio 3</label>
+              <label class="radio-inline">
+                <input type="radio" disabled="disabled" id="" name="example-radio1" value="option4">
+                Disabled radio</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Input switch</label>
+            <div class="col-sm-6">
+<!--       <div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-on bootstrap-switch-id-switch-state bootstrap-switch-animate" style="width: 106px;"><div class="bootstrap-switch-container" style="width: 156px; margin-left: 0px;"><span class="bootstrap-switch-handle-on bootstrap-switch-primary" style="width: 52px;">ON</span><span class="bootstrap-switch-label" style="width: 52px;">&nbsp;</span><span class="bootstrap-switch-handle-off bootstrap-switch-default" style="width: 52px;">OFF</span><input id="switch-state" type="checkbox" checked=""></div></div>-->
+          
+        <!--  <div class="toggle btn btn-primary ios" data-toggle="toggle" style="width: 58px; height: 34px;"><input type="checkbox" checked="" data-toggle="toggle" data-style="ios"><div class="toggle-group"><label class="btn btn-primary toggle-on">On</label><label class="btn btn-default active toggle-off">Off</label><span class="toggle-handle btn btn-default"></span></div></div>-->
+              
+              
+              <div class="btn-group btn-toggle"> 
+    <button class="btn btn-lg btn-default">ON</button>
+    <button class="btn btn-lg btn-primary active">OFF</button>
+  </div>
+              
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Input switch size</label>
+            <div class="col-sm-6">
+              <input type="checkbox" data-on-color="primary" data-size="mini" name="checkbox-example-1" class="input-switch" checked="checked" data-on-text="On" data-off-text="Off">
+              <input type="checkbox" data-on-color="info" data-size="small" name="checkbox-example-2" class="input-switch" checked="checked" data-on-text="On" data-off-text="Off">
+              <input type="checkbox" data-on-color="success" data-size="normal" name="checkbox-example-3" class="input-switch" checked="checked" data-on-text="On" data-off-text="Off">
+              <input type="checkbox" data-on-color="warning" data-size="large" name="checkbox-example-4" class="input-switch" checked="checked" data-on-text="On" data-off-text="Off">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Input switch alternate</label>
+            <div class="col-sm-6">
+              <input type="checkbox" class="input-switch-alt">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Textarea</label>
+            <div class="col-sm-6">
+              <textarea name="" id="" class="form-control"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Textarea disabled</label>
+            <div class="col-sm-6">
+              <textarea name="" disabled="disabled" id="" class="form-control"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Textarea sizes</label>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-md-6">
+                  <textarea name="" placeholder=".textarea-sm" rows="3" class="form-control textarea-sm"></textarea>
+                  <br>
+                  <textarea name="" placeholder=".textarea-md" rows="3" class="form-control textarea-md"></textarea>
+                </div>
+                <div class="col-md-6">
+                  <textarea name="" placeholder=".textarea-xs" rows="3" class="form-control textarea-xs"></textarea>
+                  <br>
+                  <textarea name="" placeholder=".textarea-lg" rows="3" class="form-control textarea-lg"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Textarea no resize</label>
+            <div class="col-sm-6">
+              <textarea name="" rows="3" class="form-control textarea-no-resize"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Textarea character counter</label>
+            <div class="col-sm-6">
+              <textarea name="" rows="3" class="form-control textarea-counter"></textarea>
+              <div class="character-remaining clear input-description">125 characters left</div>
+            </div>
+          </div>
+        </form>
+        <form class="form-horizontal bordered-row">
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Basic</label>
+            <div class="col-sm-6">
+              <input type="file" class="form-control" id="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">File group</label>
+            <div class="col-sm-6">
+              <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                <span class="input-group-addon btn btn-primary btn-file"><span class="fileinput-new">Select file</span> <span class="fileinput-exists">Change</span>
+                <input type="file" name="...">
+                </span> <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">File button</label>
+            <div class="col-sm-6">
+              <div class="fileinput fileinput-new" data-provides="fileinput"><span class="btn btn-primary btn-file"><span class="fileinput-new">Select file</span> <span class="fileinput-exists">Change</span>
+                <input type="file" name="...">
+                </span> <span class="fileinput-filename"></span> <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Image preview upload</label>
+            <div class="col-sm-6">
+              <div class="fileinput fileinput-new" data-provides="fileinput">
+                <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px"></div>
+                <div><span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span> <span class="fileinput-exists">Change</span>
+                  <input type="file" name="...">
+                  </span> <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a></div>
+              </div>
+            </div>
+          </div>
+            <div class="form-group">
+            <label class="col-sm-3 control-label">Tool tip</label>
+            <div class="col-sm-6">
+          <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+          
+          </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="col-lg-3">
+      <div class="footer-logo"><img src="images/logo.png"></div>
+      <div class="row">
+        <ul class="social-network">
+          <li><a href="#" title="Facebook"><i class="icon icon-facebook"></i></a></li>
+          <li><a href="#" title="Twitter"><i class="icon icon-twitter"></i></a></li>
+          <li><a href="#" title="Google Plus"><i class="icon icon-google-plus"></i></a></li>
+          <li><a href="#" title="Linkedin"><i class="icon icon-linkedin"></i></a></li>
+          <li><a href="#" title="You Tube"><i class="icon icon-mail"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-5 footer-navigation">
+      <h4 class="text-white">Main Navigation</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutsus.html">About Us</a></li>
+        <li><a href="#">Proffesionals</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">FAQS</a></li>
+        <li><a href="#">Blogs </a></li>
+      </ul>
+    </div>
+    <div class="col-lg-4 question-section text-left">
+      <h4 class="text-white">QUESTIONS?</h4>
+      <p>Call us: <a href="tel:000000-0000">(000) 000-0000</a></p>
+      <p>Email: <a href="mailto:info@wazzeer.com">info@wazzeer.com</a></p>
+    </div>
+  </div>
+  <div class="copyright text-center">Copyright © 2015 Wazzeer.com</div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+
+
+<!-- Include all compiled plugins (below), or include individual files as needed 
+<script src="js/bootstrap.min.js"></script>
+<script src="http://www.bootstrap-switch.org/dist/js/bootstrap-switch.js"></script>--> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/select2.min.js"></script> 
+<script type="text/javascript" src="js/forms.js"></script><!-- Init plugins only for page -->
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
+
+
+</body>
+</html>

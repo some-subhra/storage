@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wazzeer</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script>
+function toggleIcon(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find(".more-less")
+            .toggleClass('glyphicon-plus glyphicon-minus');
+    }
+    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+    $('.panel-group').on('shown.bs.collapse', toggleIcon);
+	
+	
+</script>
+</head>
+
+<body>
+<!-- header -->
+<nav class="navbar navbar-inverse top-nav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand logo" href="#"><img src="images/logo.jpg"></a> </div>
+        <div class="pull-right">  <a href="#" class="button-login pull-right">Login / Registraion</a></div>
+    <div class="navbar-collapse collapse pull-right" aria-expanded="false" style="height: 1px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="aboutsus.html">About</a></li>
+        <li><a href="#contact">Proffesionals</a></li>
+        <li><a href="#contact">Resources</a></li>
+        <li><a href="#contact">Blogs</a></li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+
+  </div>
+</nav>
+<!-- header --> 
+<!-- banner -->
+<div class="jumbotron banner-bg">
+  <div class="container">
+    <h1>Wazzeer takes care of all your legal And <br>
+      accounting work. Efficiently!</h1>
+    <p>Handpicked Lawyers, Chartered Accountants & Company Secretaries</p>
+    <p><a class="btn btn-primary btn-orange btn-lg" href="#" role="button">Ask a free question</a> <a class="btn btn-primary btn-orange btn-lg" href="#" role="button">Post a job</a></p>
+  </div>
+</div>
+<!-- banner --> 
+<!-- services -->
+<section class="services-pannel">
+  <div class="container">
+    <div class="h1 text-center text-org">List of services</div>
+    <ul>
+      <li> <a href="#">
+        <div class="h4">Business Formation</div>
+        <div class="services-thumbnail"><img src="images/icon_business.png"></div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="h4">Agreements &amp; Contracts</div>
+        <div class="services-thumbnail"><img src="images/icon_agrement.png"></div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="h4">Trademark &amp; Copyright</div>
+        <div class="services-thumbnail"><img src="images/icon_copyright.png"></div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="h4">Consumer Matters</div>
+        <div class="services-thumbnail"><img src="images/icon_consumer.png"></div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="h4">Property Matters</div>
+        <div class="services-thumbnail"><img src="images/icon_property.png"></div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="h4">Family Matters</div>
+        <div class="services-thumbnail"><img src="images/icon_family.png"></div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="h4">Legal Notice</div>
+        <div class="services-thumbnail"><img src="images/icon_legal.png"></div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="h4">Consult a Lawyer</div>
+        <div class="services-thumbnail"><img src="images/icon_consult.png"></div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="h4">Accounting & Tax</div>
+        <div class="services-thumbnail"><img src="images/icon_accounting.png"></div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="h4">Other Services</div>
+        <div class="services-thumbnail"><img src="images/icon_other.png"></div>
+        </a> </li>
+    </ul>
+  </div>
+</section>
+<!-- services --> 
+<!-- Keep form -->
+<section class="keepform-section">
+  <div class="container">
+    <div class="h1 text-white text-center">Or, Keep it simple</div>
+    <div class="row">
+      <form role="form">
+        <div class="form-group col-lg-3 col-md-3 col-sm-3">
+          <input type="text" class="form-control" id="email" placeholder="Name">
+        </div>
+        <div class="form-group col-lg-3 col-md-3 col-sm-3">
+          <select id="country" class="form-control">
+            <option>City</option>
+            <option>Bahamas</option>
+            <option>Cambodia</option>
+            <option>Denmark</option>
+            <option>Ecuador</option>
+            <option>Fiji</option>
+            <option>Gabon</option>
+            <option>Haiti</option>
+          </select>
+        </div>
+        <div class="form-group col-lg-3 col-md-3 col-sm-3">
+          <input type="text" class="form-control" id="pwd" placeholder="Phone">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- Keep form --> 
+<!-- How it works -->
+<section class="howitworks-section" style="margin-bottom:50px;">
+  <div class="container">
+    <div class="h1 text-center">How It Works</div>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="arrow_box comunicate">
+          <div class="h2 text-white nomargin-top">Communicate...</div>
+          <p>Requirements</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="arrow_box compare">
+          <div class="h2 text-white nomargin-top">Compare...</div>
+          <p>Quotations, hire & deposit payment</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="arrow_box relax">
+          <div class="h2 text-white nomargin-top">Relax...</div>
+          <p>Things get done at your doorstep!</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="review">
+          <div class="h2 text-white nomargin-top">Review...</div>
+          <p>&amp; release payment</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- How it works --> 
+<!-- Consult -->
+<section class="consult-gradient">
+  <div class="container">
+    <div class="consult-section text-center">
+      <div class="h1">Consult</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet massa nunc. Quisque ac dolor in odio posuere dictum. Cras ultrices placerat lectus vitae laoreet. Etiam in risus fringilla massa euismod feugiat.</p>
+      <a class="btn btn-primary btn-orange btn-lg" href="#" role="button">Ask a free question</a> </div>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <div class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> <i class="more-less glyphicon glyphicon-plus pull-left"></i> What are the types of Business Incorporations that are available in India. </a> </div>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            <p> Majorly there are two types of Company Incorporation :</p>
+            <ul>
+              <li> Unlimited Liability Companies: No difference between the firm and the founders. Founders' liability is unlimited and the company will not have continuous existence, i.e., on the demise of founders company cease to exist.</li>
+              <li> Limited Liability Companies: Company is a separate legal entity and hence offers Limited liability to founders, i.e., it limits the liability only  up to the assets of the company. These types of companies are registered by Registrar of Companies under Indian Companies Act-2013</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <div class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="more-less glyphicon glyphicon-plus pull-left"></i> What are the types of the companies that can be registered as Unlimited Liability Companies </a> </div>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <div class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus  pull-left"></i> What are the types of Companies that can be registered as Limited Liability Companies </a> </div>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Consult --> 
+<!-- Consult -->
+<section class="legeal-advisory">
+  <div class="bank-section text-center">
+    <div class="container">
+      <div class="h1 text-org">Legal Advisory Support To</div>
+      <div class="bank-wrapper">
+        <ul>
+          <li><img src="images/citibank.png"></li>
+          <li><img src="images/icicibank.png"></li>
+          <li><img src="images/axisbank.png"></li>
+          <li><img src="images/hdfcbank.png"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="quotes-section">
+    <div class="container">
+      <div class="quotes-wrapper">
+        <p class="mycontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum at lacus sed iaculis. Aenean nec euismod lorem, non eleifend ante. Fusce nibh elit, egestas eget sem sit amet, ullamcorper hendrerit massa. Aliquam vehicula et metus ut bibendum. Donec venenatis egestas ex, et mattis sem faucibus ac. </p>
+        <div class="h3 text-center">Abhishek Kadam</div>
+        <div class="h4 text-center">Co-Founder</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Consult -->
+
+<section class="why-us">
+  <div class="container">
+    <div class="h1 text-org text-center">Why Us</div>
+    <div class="row-full">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 why-us-section">
+        <div class="img-circle"> <img src="images/icon_whyus1.png" alt="Generic placeholder image"> </div>
+        <div class="h3">Technology changing the rules of engagement</div>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <a class="btn btn-blue whyus-button" href="#" role="button">Read More</a> </div>
+      <!-- /.col-lg-4 -->
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 why-us-section">
+        <div class="img-circle"> <img src="images/icon_whyus2.png" alt="Generic placeholder image"> </div>
+        <div class="h3">Hire the best professionals</div>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        <a class="btn btn-blue whyus-button" href="#" role="button">Read More</a> </div>
+      <!-- /.col-lg-4 -->
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 why-us-section">
+        <div class="img-circle"> <img src="images/icon_whyus3.png" alt="Generic placeholder image"> </div>
+        <div class="h3">Transparency and the 'complete' picture</div>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <a class="btn btn-blue whyus-button" href="#" role="button">Read More</a> </div>
+      <!-- /.col-lg-4 --> 
+    </div>
+  </div>
+</section>
+
+<!-- Top footer -->
+<section class="top-footer">
+  <div class="container">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center text-white">
+      <div class="h1 text-yellow">1 Thousand+</div>
+      <div class="h4">WORK DONE ANNUALLY</div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center text-white">
+      <div class="h1 text-yellow">1500+</div>
+      <div class="h4">SKILLS AVAILABLE</div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center text-white">
+      <div class="h1 text-yellow">90%+</div>
+      <div class="h4">CLIENTS WHO REHIRE</div>
+    </div>
+  </div>
+</section>
+<!-- Top footer -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="col-lg-3 col-md-5  col-sm-4">
+      <div class="footer-logo"><img src="images/logo.jpg" width="239" height="55"></div>
+      <div class="row">
+        <ul class="social-network">
+          <li><a href="#" title="Facebook"><i class="icon icon-facebook"></i></a></li>
+          <li><a href="#" title="Twitter"><i class="icon icon-twitter"></i></a></li>
+          <li><a href="#" title="Google Plus"><i class="icon icon-google-plus"></i></a></li>
+          <li><a href="#" title="Linkedin"><i class="icon icon-linkedin"></i></a></li>
+          <li><a href="#" title="You Tube"><i class="icon icon-mail"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-5 col-md-4  col-sm-4 footer-navigation">
+      <h4 class="text-white">Main Navigation</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="#">Proffesionals</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">FAQS</a></li>
+        <li><a href="#">Blogs </a></li>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-md-3 col-sm-4 question-section text-left">
+      <h4 class="text-white">QUESTIONS?</h4>
+      <p>Call us: <a href="#">(000) 000-0000</a></p>
+      <p>Email: <a href="mailto:info@wazzeer.com">info@wazzeer.com</a></p>
+    </div>
+  </div>
+  <div class="copyright text-center">Copyright © 2015 Wazzeer.com</div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

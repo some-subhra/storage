@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Counsel</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<link href="css/select2.css" type="text/css" rel="stylesheet" />
+<script>
+function toggleIcon(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find(".more-less")
+            .toggleClass('glyphicon-plus glyphicon-minus');
+    }
+    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+    $('.panel-group').on('shown.bs.collapse', toggleIcon);
+	
+	
+</script>
+</head>
+
+<body>
+<!-- header -->
+<nav class="navbar navbar-inverse top-nav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html"><img src="images/logo.jpg"></a> </div>
+    <div class="pull-right"> <a href="#" class="button-login pull-right">Login / Registraion</a></div>
+    <div class="navbar-collapse collapse pull-right" aria-expanded="false" style="height: 1px;">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li class="active"><a href="counsel.html">Counsel</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="aboutsus.html">About Us</a></li>
+        <li><a href="#contact">Blogs</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+    
+  </div>
+</nav>
+<!-- header --> 
+<!-- banner -->
+<div class="jumbotron counsel-banner-bg">
+  <div class="container">
+    <h2 class="text-white text-center">Stay Informed. Online <small class="text-white row">Legeal, Accounting &amp; Compliance Advice from Qualified Professionals</small></h2>
+    <p><a class="btn btn-primary btn-orange btn-lg" href="#" role="button">Ask a free question</a></p>
+  </div>
+</div>
+<!-- banner -->
+
+<section class="counsel-pannel">
+  <div class="container">
+    <div class="col-lg-8">
+      <div class="h1 text-org nomargin-top">Ask your question</div>
+      <form class="form-horizontal bordered-row counsel-form">
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="" placeholder="Ask Your Question here ?">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-12">
+            <textarea name="" id="" class="form-control" placeholder="Enter Question detail"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+        
+          <div class="col-sm-12">
+            <input id="tags" class="form-control" type="text" value="" placeholder="Tags" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-4 control-label">Question asked for</label>
+          <div class="col-sm-8">
+           <select name="" class="form-control chosen-select">
+            
+              <option>Indiviual</option>
+              <option>Entrepreneur</option>
+              <option>Startup</option>
+              <option>SMe Enterprise</option>
+             
+            </select>
+          </div>
+        </div>
+         <div class="form-group">
+          <div class="col-sm-6">
+            <select name="" class="form-control chosen-select">
+              <option>Country</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+              <option>Option 4</option>
+            </select>
+          </div>
+          <div class="col-sm-6">
+            <select name="" class="form-control chosen-select">
+              <option>City</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+              <option>Option 4</option>
+            </select>
+          </div>
+        </div>
+        <div class="h2 text-blue mar-top50">Your Personal Details</div>
+        <p>Your details are confidential and will not be visible to anyone. While the question and its answers will be visible to other users, your details will not be shared.</p>
+        <div class="form-group">
+          <div class="col-sm-6">
+            <input type="text" class="form-control" id="" placeholder="Name">
+          </div>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" id="" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-6">
+             <input type="text" class="form-control" id="" placeholder="Phone">
+          </div>
+          <div class="col-sm-6">
+            <select name="" class="form-control chosen-select">
+              <option>Country</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+              <option>Option 4</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <div class="col-sm-6">
+            <select name="" class="form-control chosen-select">
+              <option>City</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+              <option>Option 4</option>
+            </select>
+          </div>
+          
+          </div>
+        
+        
+        <button type="button" class="btn btn-primary btn-orange btn-lg"> Submit </button>
+        
+        
+        
+      </form>
+    </div>
+    <div class="col-lg-4">
+      <div class="browse-question grey-bg">
+        <div class="h1 text-org">Browse Topics</div>
+        <div class="row pull-left">
+          <div id="custom-search-input">
+            <div class="input-group col-md-12">
+              <input type="text" class="  search-query form-control" placeholder="Search" />
+              <span class="input-group-btn">
+              <button class="btn btn-danger" type="button"> <span class=" glyphicon glyphicon-search"></span> </button>
+              </span> </div>
+          </div>
+        </div>
+        <div class="browse-category pull-left"> <a href="#">Business Formation</a> <a href="#">Agreements &amp; Contracts</a> <a href="#">Trademark &amp; Copyright</a> <a href="#">Consumer Matters</a> <a href="#">Property Matters</a> <a href="#">Family Matters</a> <a href="#">Legeal Notice</a> <a href="#">Consult a Lawyer</a> <a href="#">Accounting &amp; Tax</a> <a href="#"> Other Services</a> </div>
+      </div>
+      <div class="right-ask-pannel text-center">
+        <div class="h3 text-center text-white nomargin-top">Didn't find a satisfactory answer?</div>
+        <a class="btn btn-primary btn-blue btn-lg" href="#" role="button">Ask question</a> </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="col-lg-3">
+      <div class="footer-logo"><img src="images/logo.png"></div>
+      <div class="row">
+        <ul class="social-network">
+          <li><a href="#" title="Facebook"><i class="icon icon-facebook"></i></a></li>
+          <li><a href="#" title="Twitter"><i class="icon icon-twitter"></i></a></li>
+          <li><a href="#" title="Google Plus"><i class="icon icon-google-plus"></i></a></li>
+          <li><a href="#" title="Linkedin"><i class="icon icon-linkedin"></i></a></li>
+          <li><a href="#" title="You Tube"><i class="icon icon-mail"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-5 footer-navigation">
+      <h4 class="text-white">Main Navigation</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="counsel.html">Counsel</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Partners</a></li>
+        <li><a href="aboutsus.html">About Us</a></li>
+        <li><a href="#contact">Blogs</a></li>
+        <li class="active"><a href="contactus.html">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="col-lg-4 question-section text-left">
+      <h4 class="text-white">QUESTIONS?</h4>
+      <p>Call us: <a href="#">(000) 000-0000</a></p>
+      <p>Email: <a href="mailto:info@wazzeer.com">info@wazzeer.com</a></p>
+    </div>
+  </div>
+  <div class="copyright text-center">Copyright © 2015 Wazzeer.com</div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script type="text/javascript" src="js/select2.min.js"></script> 
+<script type="text/javascript" src="js/forms.js"></script><!-- Init plugins only for page -->
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
