@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="infiniteScrollTutorial">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+        <script src="scroll.js"></script>
+	<script src="script.js"></script>
+        <style>
+	    .center {
+		text-align:center;
+	     }
+            .userContainer{
+		margin:10px auto;
+                width:500px;
+                background: #f9f9f9;
+                padding: 5px;
+                font-family: verdana;
+                margin-bottom: 7px;
+                box-shadow: 0px 0px 2px 1px;
+            }
+            .userContainer p{
+                font-size: 12px;
+            }
+
+		.clearfix:after {
+			visibility: hidden;
+			display: block;
+			font-size: 0;
+			content: " ";
+			clear: both;
+			height: 0;
+		}
+		* html .clearfix             { zoom: 1; } /* IE6 */
+		*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+        </style>
+    </head>
+    <body ng-cloak>
+        <div ng-controller="infiniteScrollController" ng-cloak>
+		<h1 class="center">The movie finder</h1>
+            <div infinite-scroll="getMoreData()" ng-cloak infinite-scroll-distance='1' infinite-scroll-disabled='loading'>
+    		<div ng-repeat="movie in myData" class="userContainer clearfix">
+        	<h4 class="center">{{movie.Title}}</h4>
+			<img ng-src={{movie.Poster}} style="float:right;" width="100px" height="150px"/>
+           	 	<p><b>Year:-</b> {{movie.Year}} </p>  
+           	 	<p><b>Type:-</b> {{movie.Type}}  </p>
+            		<p><b>ID:-</b> {{movie.imdbID}} </p>
+    		</div>
+	    </div>
+		<h1 ng-show= {{loading}}>LOADING...........</h1>
+        </div>
+    </body>
+</html>
