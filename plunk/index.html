@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>    
         <script src="scroll.js"></script>
 	<script src="script.js"></script>
         <style>
@@ -38,6 +40,8 @@
         </style>
     </head>
     <body ng-cloak>
+
+	<div class="minheight"?
         <div ng-controller="infiniteScrollController" ng-cloak>
 		<h1 class="center">The movie finder</h1>
             <div infinite-scroll="getMoreData()" ng-cloak infinite-scroll-distance='1' infinite-scroll-disabled='loading'>
@@ -49,7 +53,72 @@
             		<p><b>ID:-</b> {{movie.imdbID}} </p>
     		</div>
 	    </div>
-		<h1 ng-show= {{loading}}>LOADING...........</h1>
+
+<div ng-show="loading" class="center">
+<div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
         </div>
+      </div>
+
+      <div class="spinner-layer spinner-red">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-yellow">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-green">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+        </div>
+
+</div>
     </body>
 </html>
